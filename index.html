@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./src/images/weatherbirdlogo.png" alt="birdlogo">
+            <h1>MeteoBird</h1>
+        </div>
+        <div class="preview" id="previewarea">
+                <div class="citypreviewtab">
+                    <div class="flexrow">
+                        <b class="cityname">Roma, Lazio, Italy</b>
+                        <h3 class="condition">Clear</h3>
+                        <p>Temp: <b class="temp">35°</b></p>
+                    </div>
+                    <div class="flexrow">
+                        <p>Min: <b class="mintemp">21</b> Max: <b class="maxtemp">36</b></p>
+                        <p>Hum: <b class="humidity">46</b></p>
+                        <p>Rain: <b class="precipitation">0</b></p>
+                    </div>
+                </div>
+                <button type="button" class="roundbtn" id="addbtn"><p>+</p></button>           
+        </div>
+        <div class="searchbar">
+            <h3>Fri 26/07/2024</h3>
+            <div class="flexrow">
+                <input type="text" name="searchinput" id="searchinput" placeholder="Search city...">
+                <button type="button" class="roundbtn" id="searchbtn"><img src="./src/images/searchicon.svg" alt="searchicon"></button>
+            </div>
+        </div>
+
+    </header>
+    <div class="content" id="favcities">
+        
+    </div>
+    <template id="favcity">
+        <div class="favourite">
+            <b class="cityname">Roma, Lazio, Italy</b>
+            <h3 class="condition">Clear</h3>
+            <p>Temp: <b class="temp">35°</b></p>
+            <p>Min: <b class="mintemp">21</b> Max: <b class="maxtemp">36</b></p>
+            <p>Hum: <b class="humidity">46</b></p>
+            <p>Rain: <b class="precipitation">0</b></p>
+            <button type="button" class="roundbtn"><p>✕</p></button>
+        </div>
+    </template>
+</body>
+</html>
